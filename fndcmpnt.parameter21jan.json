@@ -1,0 +1,52 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workspaceName_databricks": {
+      "value": "Databricks_Test"
+    },
+    "location_databricks": {
+      "value": "westus"
+    },
+    "pricingTier_databricks": {
+      "value": "standard"
+    },
+    "name_adf": {
+      "value": "ADFtestrg"
+    },
+    "location_adf": {
+      "value": "westus"
+    },
+    "apiVersion_adf": {
+      "value": "2018-06-01"
+    },
+    "accountName_adls": {
+      "value": "adlsqarg"
+    },
+    "location_adls": {
+      "type": "string",
+      "value": "East US 2"
+    },
+	    "logicAppName": {
+      "value": "testlogicapp"
+    },
+	"location_logicapp": {
+      "value": "westus"
+    },
+	    "namespaceName_eventhub": {
+      "value": "testevthubnamspcedev"
+    },
+    "eventhubSku": {
+      "value": "Standard"
+    },
+    "eventHubName": {
+      "value": "testevnthubdev"
+    },
+    "consumerGroupName_eventhub": {
+      "value": "testconsumerdev"
+    },
+	"location_eventhub": {
+      "value": "westus"
+    }
+  }
+}
