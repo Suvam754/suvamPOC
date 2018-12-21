@@ -34,16 +34,16 @@
       "value": "westus"
     },
 	    "namespaceName_eventhub": {
-      "value": "testevthubnamspcedev"
+      "value": "testnmspsuv"
     },
     "eventhubSku": {
       "value": "Standard"
     },
     "eventHubName": {
-      "value": "testevnthubdev"
+      "value": "testevntsuv"
     },
     "consumerGroupName_eventhub": {
-      "value": "testconsumerdev"
+      "value": "testccnssuv"
     },
 	"location_eventhub": {
       "value": "westus"
