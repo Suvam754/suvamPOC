@@ -137,7 +137,19 @@
       "metadata": {
         "description": "Location for all resources."
       }
-    }
+    },
+	    "name_cosmosdb": {
+            "type": "string"
+        },
+        "location_cosmosdb": {
+            "type": "string"
+        },
+        "locationName_cosmosdb": {
+            "type": "string"
+        },
+        "defaultExperience_cosmosdb": {
+            "type": "string"
+        }
   },
   "resources": [
     {
@@ -270,7 +282,31 @@
           ]
         }
       ]
-    }
+    },
+	        {
+            "apiVersion": "2015-04-08",
+            "kind": "GlobalDocumentDB",
+            "type": "Microsoft.DocumentDb/databaseAccounts",
+            "name": "[parameters('name_cosmosdb')]",
+            "location": "[parameters('location_cosmosdb')]",
+            "properties": {
+                "databaseAccountOfferType": "Standard",
+                "locations": [
+                    {
+                        "id": "[concat(parameters('name_cosmosdb'), '-', parameters('location_cosmosdb'))]",
+                        "failoverPriority": 0,
+                        "locationName": "[parameters('locationName_cosmosdb')]"
+                    }
+                ],
+                "enableMultipleWriteLocations": false,
+                "isVirtualNetworkFilterEnabled": false,
+                "virtualNetworkRules": [],
+                "dependsOn": []
+            },
+            "tags": {
+                "defaultExperience": "[parameters('defaultExperience_cosmosdb')]"
+            }
+        }
   ],
   "variables": {
     "managedResourceGroupName": "[concat('databricks-rg-', parameters('workspaceName_databricks'), '-', uniqueString(parameters('workspaceName_databricks'), resourceGroup().id))]",
