@@ -34,22 +34,22 @@
       "value": "westus"
     },
 	    "namespaceName_eventhub": {
-      "value": "testnmspsuv"
+      "value": "testnmspsuvdev"
     },
     "eventhubSku": {
       "value": "Standard"
     },
     "eventHubName": {
-      "value": "testevntsuv"
+      "value": "testevntsuvdev"
     },
     "consumerGroupName_eventhub": {
-      "value": "testccnssuv"
+      "value": "testccnssuvdev"
     },
 	"location_eventhub": {
       "value": "westus"
     },
 	"name_cosmosdb": {
-       "value": "testcosmosdev"
+       "value": "testcosmosdevsuv"
     },
     "location_cosmosdb": {
        "value": "australiaeast"
