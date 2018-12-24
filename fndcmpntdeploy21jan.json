@@ -161,11 +161,7 @@
         "name": "[parameters('pricingTier_databricks')]"
       },
       "properties": {
-        "ManagedResourceGroupId": "[concat(subscription().id, '/resourceGroups/', variables('managedResourceGroupName'))]",
         "parameters": {
-          "vnetAddressPrefix": {
-            "value": "[parameters('vnetAddressPrefix_databricks')]"
-          }
         }
       }
     },
