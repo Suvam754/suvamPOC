@@ -309,7 +309,6 @@
         }
   ],
   "variables": {
-    "managedResourceGroupName": "[concat('databricks-rg-', parameters('workspaceName_databricks'), '-', uniqueString(parameters('workspaceName_databricks'), resourceGroup().id))]",
     "defaultSASKeyName": "RootManageSharedAccessKey",
     "authRuleResourceId": "[resourceId('Microsoft.EventHub/namespaces/authorizationRules', parameters('namespaceName_eventhub'), variables('defaultSASKeyName'))]"
   }
