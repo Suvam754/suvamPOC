@@ -28,28 +28,28 @@
       "value": "East US 2"
     },
 	    "logicAppName": {
-      "value": "testlogicapp"
+      "value": "testlogicappabc"
     },
 	"location_logicapp": {
       "value": "westus"
     },
 	    "namespaceName_eventhub": {
-      "value": "testnmspsuvdev"
+      "value": "testnmspsuvdevabc"
     },
     "eventhubSku": {
       "value": "Standard"
     },
     "eventHubName": {
-      "value": "testevntsuvdev"
+      "value": "testevntsuvdevabc"
     },
     "consumerGroupName_eventhub": {
-      "value": "testccnssuvdev"
+      "value": "testccnssuvdevabc"
     },
 	"location_eventhub": {
       "value": "westus"
     },
 	"name_cosmosdb": {
-       "value": "testcosmosdevsuv"
+       "value": "testcosmosdevsuvabc"
     },
     "location_cosmosdb": {
        "value": "australiaeast"
