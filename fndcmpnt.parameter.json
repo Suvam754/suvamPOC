@@ -1,0 +1,64 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workspaceName_databricks": {
+      "value": "Databricks_Test"
+    },
+    "location_databricks": {
+      "value": "westus"
+    },
+    "pricingTier_databricks": {
+      "value": "standard"
+    },
+    "name_adf": {
+      "value": "ADFtestrg"
+    },
+    "location_adf": {
+      "value": "westus"
+    },
+    "apiVersion_adf": {
+      "value": "2018-06-01"
+    },
+    "accountName_adls": {
+      "value": "adlsqarg"
+    },
+    "location_adls": {
+      "type": "string",
+      "value": "East US 2"
+    },
+	    "logicAppName": {
+      "value": "logicappstage"
+    },
+	"location_logicapp": {
+      "value": "westus"
+    },
+	    "namespaceName_eventhub": {
+      "value": "nmspcestage"
+    },
+    "eventhubSku": {
+      "value": "Standard"
+    },
+    "eventHubName": {
+      "value": "hubevntstage"
+    },
+    "consumerGroupName_eventhub": {
+      "value": "hubccnsstage"
+    },
+	"location_eventhub": {
+      "value": "westus"
+    },
+	"name_cosmosdb": {
+       "value": "cosmosstage"
+    },
+    "location_cosmosdb": {
+       "value": "australiaeast"
+    },
+    "locationName_cosmosdb": {
+       "value": "Australia East"
+    },
+    "defaultExperience_cosmosdb": {
+       "value": "Core (SQL)"
+    }
+  }
+}
