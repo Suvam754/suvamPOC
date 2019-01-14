@@ -76,7 +76,7 @@
 		    "$connections": {
         "value": {
             "gmail": {
-				"connectionId": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/NetworkWatcherRG/providers/Microsoft.Web/connections/gmail')]"
+				"connectionId": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/databrickssuvtest/providers/Microsoft.Web/connections/gmail')]"
                 "connectionName": "gmail",
                 "id": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/gmail')]"
 				}
