@@ -86,7 +86,7 @@
           "$connections": {
             "value": {
               "gmail": {
-                "connectionId": "/subscriptions/88b64726-b44d-468a-a867-34de1b2bf79b/resourceGroups/NetworkWatcherRG/providers/Microsoft.Web/connections/gmail",
+                "connectionId": "/subscriptions/88b64726-b44d-468a-a867-34de1b2bf79b/resourceGroups/databrickssuvtest/providers/Microsoft.Web/connections/gmail",
                 "connectionName": "gmail",
                 "id": "/subscriptions/88b64726-b44d-468a-a867-34de1b2bf79b/providers/Microsoft.Web/locations/westus/managedApis/gmail"
               }
