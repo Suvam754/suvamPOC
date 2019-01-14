@@ -35,16 +35,6 @@
       },
       "properties": {
         "definition": {
-    "$connections": {
-        "value": {
-            "office365_1": {
-                "connectionId": "/subscriptions/cfc2f64d-f5af-40f0-8367-d920c6cac963/resourceGroups/EnterpriseDataHub/providers/Microsoft.Web/connections/office365-1",
-                "connectionName": "office365-1",
-                "id": "/subscriptions/cfc2f64d-f5af-40f0-8367-d920c6cac963/providers/Microsoft.Web/locations/westus/managedApis/office365"
-            }
-        }
-    },
-    "definition": {
         "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
         "actions": {
             "Send_an_email": {
@@ -100,7 +90,6 @@
                 "type": "Request"
             }
         }
-    }
 },
         "parameters": {}
       }
