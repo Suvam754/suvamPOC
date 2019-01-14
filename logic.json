@@ -34,19 +34,26 @@
         "displayName": "LogicApp"
       },
       "properties": {
-        "definition": {
+		"$connections": {
+        "value": {
+            "gmail": {
+                "connectionId": "/subscriptions/88b64726-b44d-468a-a867-34de1b2bf79b/resourceGroups/NetworkWatcherRG/providers/Microsoft.Web/connections/gmail",
+                "connectionName": "gmail",
+                "id": "/subscriptions/88b64726-b44d-468a-a867-34de1b2bf79b/providers/Microsoft.Web/locations/westus/managedApis/gmail"
+            }
+        }
+    },
+    "definition": {
         "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
         "actions": {
-            "Send_an_email": {
+            "Send_email": {
                 "inputs": {
                     "body": {
-                        "Body": "Data Factory Name: @{triggerBody()?['dataFactoryName']}\nPipeline: @{triggerBody()?['pipelineName']}\nRun Details: @{triggerBody()?['message']}",
-                        "Subject": "@{triggerBody()?['message']} @{triggerBody()?['pipelineName']}",
-                        "To": "@triggerBody()?['receiver']"
+                        "To": "suvam16dec@gmail.com"
                     },
                     "host": {
                         "connection": {
-                            "name": "@parameters('$connections')['office365_1']['connectionId']"
+                            "name": "@parameters('$connections')['gmail']['connectionId']"
                         }
                     },
                     "method": "post",
@@ -60,42 +67,20 @@
         "outputs": {},
         "parameters": {
             "$connections": {
-        "value": {
-            "office365_1": {
-                "connectionId": "/subscriptions/cfc2f64d-f5af-40f0-8367-d920c6cac963/resourceGroups/EnterpriseDataHub/providers/Microsoft.Web/connections/office365-1",
-                "connectionName": "office365-1",
-                "id": "/subscriptions/cfc2f64d-f5af-40f0-8367-d920c6cac963/providers/Microsoft.Web/locations/westus/managedApis/office365"
+                "defaultValue": {},
+                "type": "Object"
             }
-        }
-    }
         },
         "triggers": {
             "manual": {
                 "inputs": {
-                    "method": "POST",
-                    "schema": {
-                        "properties": {
-                            "dataFactoryName": {
-                                "type": "string"
-                            },
-                            "message": {
-                                "type": "string"
-                            },
-                            "pipelineName": {
-                                "type": "string"
-                            },
-                            "receiver": {
-                                "type": "string"
-                            }
-                        },
-                        "type": "object"
-                    }
+                    "schema": {}
                 },
                 "kind": "Http",
                 "type": "Request"
             }
         }
-},
+    },
         "parameters": {}
       }
     }
