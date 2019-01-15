@@ -93,6 +93,25 @@
             }
           }
         }
+      },
+      "dependsOn": [
+        "[resourceId('Microsoft.Web/connections', 'gmail')]",
+        
+      ]
+    },
+    {
+      "type": "Microsoft.Web/connections",
+      "apiVersion": "2016-06-01",
+      "location": "[resourceGroup().location]",
+      "name": "gmail",
+      "properties": {
+        "api": {
+          "id": "[concat('subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Web/locations/', resourceGroup().location, '/managedApis/gmail')]"
+        },
+        "displayName": "gmail",
+        "parameterValues": {
+          
+        }
       }
     }
   ],
