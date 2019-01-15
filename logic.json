@@ -95,9 +95,8 @@
         }
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Web/connections', 'gmail')]",
-        
-      ]
+        "[resourceId('Microsoft.Web/connections', 'gmail')]",  
+      ],
     },
     {
       "type": "Microsoft.Web/connections",
