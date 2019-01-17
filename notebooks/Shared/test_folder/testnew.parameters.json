@@ -1,0 +1,76 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workspaceName_databricks": {
+      "value": "Databricks_Testdevelopment"
+    },
+    "location_databricks": {
+      "value": "westus"
+    },
+    "pricingTier_databricks": {
+      "value": "standard"
+    },
+    "name_adf": {
+      "value": "ADFtestrgdevelopment"
+    },
+    "location_adf": {
+      "value": "westus"
+    },
+    "apiVersion_adf": {
+      "value": "2018-06-01"
+    },
+    "accountName_adls": {
+      "value": "adlsqargdevelopment"
+    },
+    "location_adls": {
+      "type": "string",
+      "value": "East US 2"
+    },
+	    "logicAppName": {
+      "value": "logicsendfailuiremaildevelopment"
+    },
+	"location_logicapp": {
+      "value": "westus"
+    },
+	    "namespaceName_eventhub": {
+      "value": "nmspcestagedevelopment"
+    },
+    "eventhubSku": {
+      "value": "Standard"
+    },
+    "eventHubName": {
+      "value": "hubevntstagedevelopment"
+    },
+    "consumerGroupName_eventhub": {
+      "value": "hubccnsstagedevelopment"
+    },
+	"location_eventhub": {
+      "value": "westus"
+    },
+	"name_cosmosdb": {
+       "value": "cosmosstagedevelopment"
+    },
+    "location_cosmosdb": {
+       "value": "australiaeast"
+    },
+    "locationName_cosmosdb": {
+       "value": "Australia East"
+    },
+    "defaultExperience_cosmosdb": {
+       "value": "Core (SQL)"
+    },
+	        "name_cosmosmongo": {
+            "value": "cosmossuvdevelopment"
+        },
+        "location_cosmosmongo": {
+            "value": "westus"
+        },
+        "locationName_cosmosmongo": {
+            "value": "West US"
+        },
+        "defaultExperience": {
+            "value": "Azure Cosmos DB for MongoDB API"
+        }
+  }
+}
