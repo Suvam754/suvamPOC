@@ -2,7 +2,7 @@
 
 Param(
     [string] $ResourceGroupLocation = "West US",
-    [string] $ResourceGroupName = 'Suvamrgnewrg',
+    [string] $ResourceGroupName = 'Suvamrgnewrgdevelopment',
     [switch] $UploadArtifacts,
     [string] $StorageAccountName,
     [string] $StorageContainerName = $ResourceGroupName.ToLowerInvariant() + '-stageartifacts',
