@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "workspaceName_databricks": {
+      "value": "dbredhdevelopment"
+    },
+    "location_databricks": {
+      "value": "westus"
+    },
+    "pricingTier_databricks": {
+      "value": "standard"
+    },
+    "name_adf": {
+      "value": "adfedhdevelopment"
+    },
+    "location_adf": {
+      "value": "westus"
+    },
+    "apiVersion_adf": {
+      "value": "2018-06-01"
+    },
+    "accountName_adls": {
+      "value": "adlsedhdevelopment"
+    },
+    "location_adls": {
+      "type": "string",
+      "value": "Central US"
+    },
+	    "logicAppName": {
+      "value": "ADFsuccessemailqa"
+    },
+	"location_logicapp": {
+      "value": "westus"
+    },
+	    "namespaceName_eventhub": {
+      "value": "ehedhdevelopment"
+    },
+    "eventhubSku": {
+      "value": "Standard"
+    },
+	"location_eventhub": {
+      "value": "westus"
+    },
+	 "name_cosmosmongo": {
+      "value": "cmdbsqledhdevelopment"
+     },
+        "location_cosmosmongo": {
+            "value": "westus"
+        },
+        "locationName_cosmosmongo": {
+            "value": "West US"
+        },
+        "defaultExperience": {
+            "value": "Azure Cosmos DB for MongoDB API"
+        }
+  }
+}
