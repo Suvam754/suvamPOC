@@ -2,9 +2,9 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "keyVaultNamekeyvault": {
+    "keyVaultName": {
       "type": "string",
-      "data": {
+      "metadata": {
         "description": "Specifies the name of the key vault."
       }
     },
@@ -106,7 +106,7 @@
   "resources": [
     {
       "type": "Microsoft.KeyVault/vaults",
-      "name": "[parameters('keyVaultNamekeyvault')]",
+      "name": "[parameters('keyVaultName')]",
       "apiVersion": "2018-02-14",
       "location": "[parameters('locationkeyvault')]",
       "properties": {
@@ -138,11 +138,11 @@
     },
     {
       "type": "Microsoft.KeyVault/vaults/secrets",
-      "name": "[concat(parameters('keyVaultNamekeyvault'), '/', parameters('secretNamekeyvault'))]",
+      "name": "[concat(parameters('keyVaultName'), '/', parameters('secretNamekeyvault'))]",
       "apiVersion": "2018-02-14",
       "location": "[parameters('locationkeyvault')]",
       "dependsOn": [
-        "[resourceId('Microsoft.KeyVault/vaults', parameters('keyVaultNamekeyvault'))]"
+        "[resourceId('Microsoft.KeyVault/vaults', parameters('keyVaultName'))]"
       ],
       "properties": {
         "value": "[parameters('secretValuekeyvault')]"
