@@ -4,7 +4,7 @@
   "parameters": {
     "keyVaultNamekeyvault": {
       "type": "string",
-      "metadata": {
+      "data": {
         "description": "Specifies the name of the key vault."
       }
     },
@@ -22,7 +22,7 @@
         true,
         false
       ],
-      "metadatakeyvault": {
+      "metadata": {
         "description": "Specifies whether Azure Virtual Machines are permitted to retrieve certificates stored as secrets from the key vault."
       }
     },
