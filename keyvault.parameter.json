@@ -2,17 +2,17 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "keyVaultName": {
+    "keyVaultNamekeyvault": {
       "value": "suvamtestkv"
     },
-    "objectId": {
+    "objectIdkeyvault": {
       "value": "f473e427-706b-48e1-969a-96c4f75d8951"
     },
-    "secretName": {
-      "value": "suvam"
+    "secretNamekeyvault": {
+      "value": "testSecrets"
     },
-    "secretValue": {
-      "value": "suvam"
+    "secretValuekeyvault": {
+      "value": "testSecrets"
     }
   }
 }
